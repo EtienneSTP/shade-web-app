@@ -3,6 +3,12 @@
 
 module.exports = function(environment) {
   let ENV = {
+    apollo: {
+      apiURL: 'https://localhost:4001/graphql',
+      // Optionally, set the credentials property of the Fetch Request interface
+      // to control when a cookie is sent:
+      // requestCredentials: 'same-origin', // other choices: 'include', 'omit'
+    },
     modulePrefix: 'shade-web-app',
     environment,
     rootURL: '/',
